@@ -529,6 +529,7 @@ main{
     padding: 8rem 2rem;
 
     display: flex;
+    gap: 2rem;
 }
 
 .aboutMe-img{
@@ -557,7 +558,7 @@ main{
 
     gap: 4rem;
 
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .aboutMe-description h3{
@@ -640,6 +641,8 @@ main{
     background-image: url(./assets/img/martelo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 .contact__container{
@@ -770,3 +773,147 @@ label{
 }
 
 /* FOOTER */
+
+footer{
+    width: 100%;
+}
+
+.footer__container{
+    width: 100%;
+    max-width: 1720px;
+
+    margin: 0 auto;
+    padding: 8rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer__container h2{
+    font-size: 3em;
+    font-weight: 900;
+
+    text-align: center;
+
+    margin: 0  0 1rem 0;
+}
+
+.footer__container h2:after{
+    content: "";
+
+    height: 10px;
+    width: 440px;
+
+    background: var(--gold);
+
+    margin-top: 2px;
+
+    display: block;
+    margin: 0 auto;
+
+}
+
+.footer__container-contact{
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.adress,
+.phones,
+.time{
+    width: 100%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.adress p,
+.phones a,
+.time p{
+    margin-left: 3em;
+}
+
+.phones span,
+.time a{
+    color: var(--gold);
+}
+
+.adress-title h3,
+.phones-title h3,
+.time-title h3{
+    font-size: 1.75rem;
+}
+
+.adress-title,
+.phones-title,
+.time-title{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social{
+    width: 100%;
+    max-width: 250px;
+}
+
+.social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.social img{
+    width: 100%;
+    max-width: 40px;
+
+    transition: 200ms all ease-in-out;
+}
+
+.social img:hover{
+    transform: scale(1.1);
+}
+
+.footer__container-map{
+    width: 65%;
+}
+
+.development{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+
+    padding: 2rem;
+
+    background: #000;
+}
+
+.development p{
+    font-weight: 700;
+}
+
+.development a{
+    font-weight: 700;
+    color: var(--gold);
+}
+
+@media(max-width: 1080px){
+
+
+    .footer__container{
+        padding: 4rem 1rem;
+
+    }
+    
+}
