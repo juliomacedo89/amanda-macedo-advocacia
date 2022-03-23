@@ -1,7 +1,7 @@
  /* RESET CSS */
  
  :root{
-    --bg-principal: #312E2D;
+    --bg-principal: #111111f3;
     color: var(--white);
 
     --bg1: #013A33 (verde);
@@ -98,6 +98,8 @@ a{
 
     display: flex;
     align-items: center;
+
+
 }
 
 .header__container-left{
@@ -212,7 +214,7 @@ a{
 }
 .banner__container{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 
     margin: 0 auto;
 
@@ -686,7 +688,8 @@ main{
 }
 
 .contact-form{
-    width: 40%;
+    width: 100%;
+    max-width: 650px;
 
     margin: 0 auto;
 
@@ -701,10 +704,11 @@ main{
     background: rgba(0, 0, 0, 0.4);
 }
 
-.contact-form input,
+.contact-form #input-contact,
 .contact-form textarea{
    width: 100%;
    max-width: 600px;
+
 
    padding: .5rem 1rem;
 
@@ -749,9 +753,7 @@ label{
 
 
 
-@media(max-width: 1080px){
-
-
+@media (min-width: 701px) and (max-width: 1080px){
     .contact__container{
         padding: 4rem 1rem; 
     }
@@ -767,12 +769,57 @@ label{
 
     .contact__container h2:after{
         width: 255px;
+    }
 
+    .contact-form{
+        min-width: 600px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 700px){
+    .contact__container{
+        padding: 4rem 1rem; 
+    }
+
+    .contact__container h2{
+        font-size: 1.75rem;
+        font-weight: 900;
+    
+        text-align: center;
+    
+        margin: 0  0 5rem 0;
+    }
+
+    .contact__container h2:after{
+        width: 255px;
+    }
+    
+    .contact-area{
+        width: 100%;
+        max-width: 650px;
+        min-width: 290px;
+    }
+    
+    .contact-form{
+        min-width: 290px;
+        padding: 1rem;
+
+    }
+
+    .contact-form button{ 
+        max-width: 300px;
+    }
+        
+
+    #input-contact{
+        display: flex;
+        width: 100px;
     }
 
 }
 
-/* FOOTER */
+
+/* FOOTER */ 
 
 footer{
     width: 100%;
@@ -786,8 +833,7 @@ footer{
     padding: 8rem 2rem;
 
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .footer__container h2{
@@ -854,7 +900,6 @@ footer{
 .phones-title,
 .time-title{
     display: flex;
-    gap: 1.5rem;
     align-items: center;
     gap: 1rem;
 }
@@ -884,7 +929,8 @@ footer{
 
 .footer__container-map{
     width: 65%;
-}
+
+} 
 
 .development{
     width: 100%;
@@ -908,12 +954,100 @@ footer{
     color: var(--gold);
 }
 
-@media(max-width: 1080px){
 
+@media(min-width: 1081px) and (max-width: 1600px){
+    .footer__container h2{
+        font-size: 1.75rem;
+    
+        text-align: center;
+    
+        margin: 0  0 1rem 0;
+    }
+
+    .footer__container h2:after{
+        width: 255px;
+    }
+
+    .adress h3,
+    .phones h3,
+    .time h3{
+        font-size: 1.25rem;
+    }
+}
+
+
+@media(max-width: 1080px){
 
     .footer__container{
         padding: 4rem 1rem;
+        flex-direction: column;
 
+        gap: 3rem;
+        
     }
     
+    .footer__container h2{
+        font-size: 1.75rem;
+    
+        text-align: center;
+    
+        margin: 0  0 1rem 0;
+    }
+
+    .footer__container h2:after{
+        width: 255px;
+    }
+
+    .footer__container-contact{
+        width: 100%;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .adress, 
+    .phones, 
+    .time{
+        align-items: center;
+    }
+
+    .adress-title,
+    .phones-title,
+    .time-title{
+        gap: .5rem;
+    }
+        
+    .adress h3,
+    .phones h3,
+    .time h3{
+        font-size: 1.25rem;
+    }
+
+    .adress p,
+    .phones a,
+    .time p{
+        margin-left: 0;
+    }
+
+    .social{
+        max-width: 300px;
+    }
+
+    .footer__container-map{
+        width: 100%;
+
+        margin-top: 3rem;
+    }
+
+    .maps-google{
+        height: 400px;
+    }
+
+    #gmap_canvas{
+        height: 400px;
+    }
+    
+    .development{
+        flex-wrap: wrap;
+    }
+
 }
