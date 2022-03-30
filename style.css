@@ -103,7 +103,7 @@ a{
 }
 
 .header__container-left{
-    width: 40%;
+    width: 20%;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -123,7 +123,7 @@ a{
 }
 
 .header__container-right{
-    width: 60%;
+    width: 80%;
     height: 100%;
     
     display: flex;
@@ -299,15 +299,16 @@ a{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
 }
 
 .banner__container-right img{
-    height: 90%;
+    height: 80%;
     object-fit: cover;
 
 }
 
-@media(max-width:1080px){
+@media(max-width:1180px){
 
     .banner__container{
         flex-direction: column;
@@ -397,6 +398,7 @@ main{
 .specialty__container{
     width: 100%;
     max-width: 1720px;
+    height: 100vh;
 
     margin: 0 auto;
     padding: 8rem 2rem;
@@ -494,6 +496,7 @@ main{
     .specialty__container{
         margin: 0 auto;
         padding: 4rem 1rem;
+        height: 100%;
   
     }
     .specialty__container h2{
@@ -526,6 +529,7 @@ main{
 .aboutMe__container{
     width: 100%;
     max-width: 1720px;
+    height: 100vh;
 
     margin: 0 auto;
     padding: 8rem 2rem;
@@ -604,6 +608,8 @@ main{
         padding: 4rem 1rem;
 
         gap: 1rem;
+
+        height: 100%;
     }
 
     .aboutMe-description{
@@ -650,9 +656,10 @@ main{
 .contact__container{
     width: 100%;
     max-width: 1500px;
+    height: 100vh;
 
     margin: 0 auto;
-    padding: 8rem 2rem; 
+    padding: 4rem 2rem; 
 
 }
 
@@ -689,7 +696,7 @@ main{
 
 .contact-form{
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
 
     margin: 0 auto;
 
@@ -756,6 +763,8 @@ label{
 @media (min-width: 701px) and (max-width: 1080px){
     .contact__container{
         padding: 4rem 1rem; 
+
+        height: 100%;
     }
 
     .contact__container h2{
@@ -779,6 +788,8 @@ label{
 @media(min-width: 320px) and (max-width: 700px){
     .contact__container{
         padding: 4rem 1rem; 
+
+        height: 100%;
     }
 
     .contact__container h2{
@@ -836,8 +847,8 @@ footer{
     gap: 3rem;
 }
 
-.footer__container h2{
-    font-size: 3em;
+.footer__container-contact h2{
+    font-size: 3rem;
     font-weight: 900;
 
     text-align: center;
@@ -849,7 +860,7 @@ footer{
     content: "";
 
     height: 10px;
-    width: 440px;
+    width: 294px;
 
     background: var(--gold);
 
@@ -906,14 +917,14 @@ footer{
 
 .social{
     width: 100%;
-    max-width: 250px;
+    max-width: 320px;
 }
 
 .social ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: .5rem;
+    
 }
 
 .social img{
@@ -957,7 +968,7 @@ footer{
 
 @media(min-width: 1081px) and (max-width: 1600px){
     .footer__container h2{
-        font-size: 1.75rem;
+        font-size: 3rem;
     
         text-align: center;
     
@@ -965,7 +976,7 @@ footer{
     }
 
     .footer__container h2:after{
-        width: 255px;
+        width: 294px;
     }
 
     .adress h3,
@@ -995,7 +1006,7 @@ footer{
     }
 
     .footer__container h2:after{
-        width: 255px;
+        width: 170px;
     }
 
     .footer__container-contact{
@@ -1037,17 +1048,45 @@ footer{
 
         margin-top: 3rem;
     }
-
-    .maps-google{
-        height: 400px;
-    }
-
-    #gmap_canvas{
-        height: 400px;
-    }
     
     .development{
         flex-wrap: wrap;
     }
+
+}
+
+/* MENU -MOBILE */
+
+.menu-mobile{
+
+}
+
+.menu-mobile__container{
+
+}
+
+.menu-mobile-close{
+
+
+}
+
+.menu-mobile-close img{
+
+    
+}
+
+.menu-mobile-nav{
+
+}
+
+.menu-mobile-nav ul{
+
+}
+
+.menu-mobile-nav li{
+
+}
+
+.menu-mobile-nav a{
 
 }
